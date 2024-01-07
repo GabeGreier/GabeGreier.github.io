@@ -124,33 +124,6 @@ main {
     0 0 80px #00b3ff,
     0 0 120px #00b3ff;
 }
-/*
-.projects-button {
-    padding: 12px 30px;
-    background-color: #131859;
-    color: white;
-    font-size: 2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-    
-}
-
-.projects-button:hover {
-    box-shadow: 0 0 10px var(--shadow-glow),
-    0 0 20px var(--shadow-glow),
-    0 0 400px var(--shadow-glow),
-    0 0 80px var(--shadow-glow),
-    0 0 120px var(--shadow-glow);
-    text-shadow: 0 0 10px var(--shadow-glow),
-    0 0 20px var(--shadow-glow),
-    0 0 400px var(--shadow-glow),
-    0 0 80px var(--shadow-glow),
-    0 0 120px var(--shadow-glow);
-} */
-
 .projects {
     display: flex;
     justify-content: center;
