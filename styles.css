@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Neutra Text Alt', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-primary: #fff;
+    --shadow-glow: #00b3ff;
+    --dark-blue: #131859;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    position: relative; /* Make the position relative to enable absolute positioning of pseudo-element */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(background.jpg);
+    filter: brightness(1.25);
+}
+  
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5%; /* Adjust to control the height of the fade */
+    background: linear-gradient(to bottom, transparent, black); /* Adjust as needed */
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
+}
+
+.g-logo {
+    position: fixed;
+    top: 0px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+    padding: 18px; /* Adjust to make the button bigger */
+    font-size: 7vh;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    text-shadow: 0 0 10px var(--shadow-glow),
+    0 0 20px #00b3ff,
+    0 0 400px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
+}
+
+.nav {
+    position: fixed;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent; /* Adjust as needed */
+    z-index: 2; /* Ensure it's above the hero section */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    gap: 100px;
+}
+
+.nav-items li {
+    margin: 0;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 10px var(--shadow-glow),
+    0 0 20px var(--shadow-glow),
+    0 0 400px var(--shadow-glow),
+    0 0 80px var(--shadow-glow),
+    0 0 120px var(--shadow-glow);
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.hero-text, .name, .projects-button {
+    margin: 10px; /* Add margin between the elements */
+}
+
+.hero-text {
+    color: white;
+    font-size: 6vh;
+    text-shadow: 0 0 5px white;
+}
+
+.name {
+    margin: 5px;
+    display: flex;
+    color: var(--text-primary);
+    font-size: 5em;
+    text-shadow: 0 0 10px var(--shadow-glow),
+    0 0 20px #00b3ff,
+    0 0 400px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
+}
+
+.projects-button {
+    padding: 12px 30px;
+    background-color: #131859;
+    color: white;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.projects-button:hover {
+    box-shadow: 0 0 10px var(--shadow-glow),
+    0 0 20px var(--shadow-glow),
+    0 0 400px var(--shadow-glow),
+    0 0 80px var(--shadow-glow),
+    0 0 120px var(--shadow-glow);
+    text-shadow: 0 0 10px var(--shadow-glow),
+    0 0 20px var(--shadow-glow),
+    0 0 400px var(--shadow-glow),
+    0 0 80px var(--shadow-glow),
+    0 0 120px var(--shadow-glow);
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    gap: 5px;
+    position: relative; /* Added position relative to the container */
+}
+
+.projects h1 {
+    color: white;
+    position: absolute; /* Added position absolute to the h1 element */
+    top: 14%; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    font-size: 5vh;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.projects p {
+    color: white;
+    text-align: center;
+    width: 47.5%;
+    font-size: 32px;
+}
+
+.projects img {
+    width: 47.5%;
+    height: auto;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    background-color: black;
+}
+  

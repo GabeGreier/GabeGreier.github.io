@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabeGreier-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/neutra-text-alt" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="top-row">
+        <button class="g-logo" onclick="scrollToHeroSection()" > G </button>
+
+        <nav class="nav">
+            <ul class="nav-items">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+ 
+    <main>
+        <section class="hero" id="hero-section">
+            <h1 class="hero-text">Hi!, I'm:</h1>
+            <h1 class="name" data-value="Gabe-Greier">Gabe-Greier</h1>
+            <button class="projects-button" onclick="scrollToProjects()">Projects</button>
+        </section>
+
+        <section class="projects" id="projects">
+            <h1>Personal Website</h1>
+            <p> I made this website using plain html, css, and 
+                a tiny bit of javascript. This is my first working & running 
+                website I have made. This project introduced me to html, css, and 
+                javascript. I learned how to use flexbox to organize content on my page,
+                the :hover function to change elements styling when the element is being hovered, 
+                and the basics of a nav bar which links to specific sectons on the page. I will continue
+                to add and develop this website as time goes on.
+            </p>
+            <img src="code-snippet.png">
+        </section>
+
+    </main>
+
+</body>
+</html>
